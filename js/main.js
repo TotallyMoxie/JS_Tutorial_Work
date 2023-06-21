@@ -351,23 +351,70 @@ console.log(counter); */
 
 
 
-
-
-
-
-
-
 // Functions
 
-// Methods = Built-in FunctionsA
+// Functions Provide Reusable Code!!
+// Methods = Built-in Functions
 
 /* "Dave".toLowerCase();
 Math.random(); */
 
 // Function Declaration Syntax:
 
-function sum(num1, num2) {
+/* function sum(num1, num2) {
+  if (num2 === undefined) {
+    return num1 + num1;
+  }
   return num1 + num2;
 }
 
-console.log(sum(2, 6));
+console.log(sum(5, 10)); */
+
+/* const getUserNameFromEmail = function (email)  {
+  return email.slice(0, email.indexOf("@"));
+}
+  console.log(getUserNameFromEmail("dave@davedomain.com")); */
+
+  // Arrow Functions
+
+/*   const getUserNameFromEmail = (email) => {
+    return email.slice(0, email.indexOf("@"));
+  };
+    console.log(getUserNameFromEmail("john@davedomain.com")); */
+
+/* const toProperCase = (name) => {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+};
+console.log(toProperCase("jOhN")); */
+
+
+
+
+
+
+
+// Scope
+// var, let, and const
+// var is legacy, const is for values you are not reassigning, let is if a value will be reassigned.
+//Global = Not in a function or block. Not desirable.
+//Local = In a function or block. Not global.
+//var instantiates function() scoped variables.
+// let and const instantiate {block} scoped variables.
+
+// global scope
+var x = 1;
+let y = 2;
+const z = 3;
+
+// local scope; function scope
+function myFunc() {
+  const z = 5;
+  console.log(y);
+
+  //local scope; block scope
+  {
+    let y = 4;
+    console.log(y);
+  }
+}
+myFunc();
