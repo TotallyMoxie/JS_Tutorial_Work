@@ -402,7 +402,7 @@ console.log(toProperCase("jOhN")); */
 // let and const instantiate {block} scoped variables.
 
 // global scope
-var x = 1;
+/* var x = 1;
 let y = 2;
 const z = 3;
 
@@ -418,3 +418,41 @@ function myFunc() {
   }
 }
 myFunc();
+ */
+
+
+
+
+
+
+
+
+// Arrays
+
+const myArray = [];
+
+// add elements to an array by referencing the position they're in in the array
+myArray[0] = "Dave";
+myArray[1] = 1001;
+myArray[2] = false;
+
+// refer to an array
+/* console.log(myArray); */
+
+//length property
+/* console.log(myArray.length); */
+
+// Last element in an array
+/* console.log(myArray[myArray.length - 1]); */
+/* console.log(myArray[1]); */
+
+myArray.push("school");
+
+console.log(myArray);
+
+const lastItem = myArray.pop();
+
+console.log(lastItem);
+
+myArray.unshift(42);
+console.log(myArray);
