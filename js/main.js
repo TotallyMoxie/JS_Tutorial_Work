@@ -429,12 +429,12 @@ myFunc();
 
 // Arrays
 
-const myArray = [];
+/* const myArray = []; */
 
 // add elements to an array by referencing the position they're in in the array
-myArray[0] = "Dave";
+/* myArray[0] = "Dave";
 myArray[1] = 1001;
-myArray[2] = false;
+myArray[2] = false; */
 
 // refer to an array
 /* console.log(myArray); */
@@ -445,14 +445,33 @@ myArray[2] = false;
 // Last element in an array
 /* console.log(myArray[myArray.length - 1]); */
 /* console.log(myArray[1]); */
-
+/* 
 myArray.push("school");
-
 console.log(myArray);
 
 const lastItem = myArray.pop();
-
 console.log(lastItem);
 
 myArray.unshift(42);
-console.log(myArray);
+console.log(myArray); */
+
+/* myArray.splice(1, 0, 42);  *///play with middle number
+/* console.log(myArray); */
+
+/* const myArray = ["A", "B", "C", "D", "E", "F"];
+myArray.reverse();
+console.log(myArray); */
+
+// join method: concat
+/* const myArrayA = ["A", "B", "C"]
+const myArrayB = ["D", "E", "F"];
+const newArray = myArrayB.concat(myArrayA);
+console.log(newArray);*/
+
+// join method: spread operator
+/* const myArrayA = ["A", "B", "C"]
+const myArrayB = ["D", "E", "F"];
+const newArray = [...myArrayA, ...myArrayB];
+console.log(newArray); */
+
+ 
