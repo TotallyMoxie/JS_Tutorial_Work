@@ -522,13 +522,13 @@ console.log(tesla.wheels);
 tesla.engine = function() {return "Shhhh...."};
 console.log(tesla.engine()); */
 
-const band = {
+/* const band = {
   vocals: "Robert Plant",
   guitar: "Jimmy Page",
   bass: "John Paul Jones",
   drums: "John Bonham"
 };
-
+ */
 /* delete band.drums;
 console.log(band.hasOwnProperty("drums"));
 
@@ -540,6 +540,47 @@ for (let job in band) {
 } */
 
 // destructuring objects
-const { vocals, guitar, bass, drums } = band;
+/* const { vocals, guitar, bass, drums } = band;
 console.log(guitar);
 console.log(vocals);
+ */
+/* function sings({ vocals }) {
+  return `${vocals} sings!`
+}
+console.log(sings(band)); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Javascript Classes
+//parameters
+class Pizza {
+  crust = "original";
+  #sauce = "traditional";
+  #size;
+  constructor(pizzaSize) {
+    this.#size = pizzaSize;
+  }
+  getCrust() {
+    return this.crust;
+  }
+  setCrust (pizzaCrust) {
+    this.crust = pizzaCrust;
+  }
+  hereYouGo() {
+    console.log(`Here's your ${this.crust} ${this.#sauce} sauce ${this.#size} pizza.`);
+  }
+}
+const myPizza = new Pizza("large");
+myPizza.hereYouGo();
+console.log(myPizza.getCrust());
