@@ -474,4 +474,51 @@ const myArrayB = ["D", "E", "F"];
 const newArray = [...myArrayA, ...myArrayB];
 console.log(newArray); */
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// OBJECTS  
+/* const myObj = { name: "Shaina"};
+
+const anotherObj = {
+  alive: true,
+  answer: 42,
+  hobbies: ["Eat","Sleep","Code"],
+  beverage: {
+    morning: "Coffee",
+    afternoon: "Iced Tea"
+  },
+  action: function() {
+    return `Time for ${this.beverage.morning}`;
+  }
+};
+console.log(anotherObj.action());
+ */
+
+// objects--inheritance
+const vehicle = {
+  wheels: 4,
+  engine: function() {
+    return "Vrroooom!";
+  }
+}
+
+const truck = Object.create(vehicle);
+truck.doors = 2;
+console.log(truck);
+console.log(truck.wheels);
+console.log(truck.engine());
+const car = Object.create(vehicle);
+car.doors = 4;
+car.engine = function() { return "Whooooosh!"};
+console.log(car.engine());
