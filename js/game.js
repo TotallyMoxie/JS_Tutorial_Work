@@ -1,4 +1,4 @@
-let playGame = confirm("Shall we play rock, paper, or scissors?");
+/* let playGame = confirm("Shall we play rock, paper, or scissors?");
 if (playGame) {
   //play
   while (playGame) {
@@ -41,3 +41,4 @@ if (playGame) {
 } else {
   alert("Ok, maybe next time.");
   }
+ */
