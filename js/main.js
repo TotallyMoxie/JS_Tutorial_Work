@@ -599,7 +599,7 @@ console.log(myPizza.getCrust()); */
 
 
 // JSON
-const myObj = {
+/* const myObj = {
   name: "Dave",
   hobbies : ["eat", "sleep", "code"],
   hello: function () {
@@ -618,4 +618,35 @@ console.log(sendJSON.name);
 
 const receiveJSON = JSON.parse(sendJSON);
 console.log(receiveJSON);
-console.log(typeof receiveJSON);
+console.log(typeof receiveJSON); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Document Object Model (DOM)
+const view1 = document.getElementById("view1");
+console.log(view1);
+const view2 = document.querySelector("#view2");
+console.log(view2);
+view1.style.display = "flex";
+view2.style.display = "flex";
+//allows to scroll between view 1 and 2
+
+const views = document.getElementsByClassName("view");
+console.log(views);
+const sameViews = document.querySelectorAll('.view');
+console.log(sameViews);
+
+const divs = view1.querySelectorAll("div");
+console.log(divs);
+const sameDivs = view1.getElementsByTagName("div");
+console.log(sameDivs);
