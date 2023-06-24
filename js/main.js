@@ -810,13 +810,26 @@ const initApp = () => {
 
 //We do not have to type window, it is implied
 
+const myArray = ["eat", "sleep", "code"];
 const myObject = {
   name: "Dave",
-  logName: function() {
+  hobbies: ["eat", "sleep", "code"],
+  logName: function () {
     console.log(this.name);
   }
-}
+};
 
-const myArray = ["eat", "sleep", "code"];
+//myObject.logName();
 
-myObject.logName();
+//session storage
+/* sessionStorage.setItem("mySessionStore", JSON.stringify(myArray));
+const mySessionData = JSON.parse(sessionStorage.getItem("mySessionStore"));
+console.log(mySessionData); */
+
+
+//local storage
+localStorage.setItem("myLocalStore", JSON.stringify(myArray));
+const storeLength = localStorage.length;
+const myLocalData = JSON.parse(localStorage.getItem("myLocal Store"));
+
+console.log(storeLength); 
