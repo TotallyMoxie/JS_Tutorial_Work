@@ -1,5 +1,5 @@
 //Modules
-export default function playGuitar() {
+export function playGuitar() {
   return "Playing guitar!"
 };
 
