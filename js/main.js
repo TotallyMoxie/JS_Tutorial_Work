@@ -848,7 +848,7 @@ console.log(storeLength);  */
 
 
 // Modules
-import * as Guitars from "./guitars.js";
+/* import * as Guitars from "./guitars.js";
 import User from "./user.js";
 const me = new User("email@email.com", "Dave");
 console.log(me);
@@ -857,3 +857,49 @@ console.log(me.greeting());
 console.log(Guitars.playGuitar());
 console.log(Guitars.shredding());
 console.log(Guitars.plucking());
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Higher Order Functions
+
+// A higher order function is a function that does at least one of the follong:
+// ** Takes one or more cutniosn as an arguemnt (parameter)
+// ** Returns a function as the result
+import { posts } from "./posts.js";
+
+// forEach()
+posts.forEach(post => {
+  console.log(post);
+});
+console.clear();
+
+// filter
+const filteredPosts = posts.filter((post) => {
+  return post.userId === 1;
+});
+console.log(filteredPosts);
+
+// Mapped
+const mappedPosts = filteredPosts.map((post) => {
+  return post.id * 10;
+});
+console.log(mappedPosts);
+
+//Reduce
+const reducedPostsValue = mappedPosts.reduce((sum, post) => {
+  return sum + post;
+});
+console.log(reducedPostsValue);
