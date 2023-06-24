@@ -773,7 +773,7 @@ const initApp = () => {
     event.target.classList.remove("height100");
   });
 }; */
-
+/* 
 document.addEventListener("readystatechange", (event) => {
   if (event.target.readyState === "complete") {
     console.log("readyState: complete");
@@ -788,4 +788,35 @@ const initApp = () => {
     event.preventDefault();
     console.log("submit event");
   });
-};
+}; */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Web Storage API
+
+// Not part of the DOM - refers to the Window API
+// Available to JS via the global variable: window
+
+//We do not have to type window, it is implied
+
+const myObject = {
+  name: "Dave",
+  logName: function() {
+    console.log(this.name);
+  }
+}
+
+const myArray = ["eat", "sleep", "code"];
+
+myObject.logName();
