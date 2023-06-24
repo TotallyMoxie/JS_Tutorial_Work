@@ -878,22 +878,22 @@ console.log(Guitars.plucking());
 // A higher order function is a function that does at least one of the follong:
 // ** Takes one or more cutniosn as an arguemnt (parameter)
 // ** Returns a function as the result
-import { posts } from "./posts.js";
+/* import { posts } from "./posts.js"; */
 
 // forEach()
-posts.forEach(post => {
+/* posts.forEach(post => {
   console.log(post);
 });
-console.clear();
+console.clear(); */
 
 // filter
-const filteredPosts = posts.filter((post) => {
+/* const filteredPosts = posts.filter((post) => {
   return post.userId === 1;
 });
-console.log(filteredPosts);
+console.log(filteredPosts); */
 
 // Mapped
-const mappedPosts = filteredPosts.map((post) => {
+/* const mappedPosts = filteredPosts.map((post) => {
   return post.id * 10;
 });
 console.log(mappedPosts);
@@ -902,4 +902,78 @@ console.log(mappedPosts);
 const reducedPostsValue = mappedPosts.reduce((sum, post) => {
   return sum + post;
 });
-console.log(reducedPostsValue);
+console.log(reducedPostsValue); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Fetch / Async / Await
+
+
+// Fetch API requires ...
+//Callbacks, Promises, Thenables, and Async/Await
+
+//function firstFunction(parameters, callback) {
+  //do stuff
+  //callback();
+//}
+
+// Promises
+// 3 states: Pending, Fulfilled, Rejected
+
+/* const myPromise = new Promise((resolve, reject) => {
+  const error = false;
+  if (!error) {
+    resolve("Yes! Resolved the promise!");
+  } else {
+    reject("No! Rejected the Promise.");
+  }
+});
+ */
+//console.log(myPromise);
+
+//Thenables
+/* myPromise.then(value => {
+  return value + 1;
+})
+.then(newValue => {
+  console.log(newValue);
+})
+.catch(err => {
+  console.error(err);
+}) */
+
+/* const myNextPromise = new Promise ((resolve, reject) => {
+  setTimeout(function() {
+    resolve("myNextPromise resolved!");
+  }, 3000);
+});
+
+myNextPromise.then(value => {
+  console.log(value);
+})
+
+myPromise.then(value => {
+  console.log(value);
+}) */
+
+
+const users = fetch("https://jsonplaceholder.typicode.com/users");
+
+// pending state
+console.log(users);
+
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then(response => {
+    console.log(response);
+})
