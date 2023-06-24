@@ -810,7 +810,7 @@ const initApp = () => {
 
 //We do not have to type window, it is implied
 
-const myArray = ["eat", "sleep", "code"];
+/* const myArray = ["eat", "sleep", "code"];
 const myObject = {
   name: "Dave",
   hobbies: ["eat", "sleep", "code"],
@@ -818,7 +818,7 @@ const myObject = {
     console.log(this.name);
   }
 };
-
+ */
 //myObject.logName();
 
 //session storage
@@ -828,8 +828,23 @@ console.log(mySessionData); */
 
 
 //local storage
-localStorage.setItem("myLocalStore", JSON.stringify(myArray));
+/* localStorage.setItem("myLocalStore", JSON.stringify(myArray));
 const storeLength = localStorage.length;
 const myLocalData = JSON.parse(localStorage.getItem("myLocal Store"));
 
-console.log(storeLength); 
+console.log(storeLength);  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Modules
