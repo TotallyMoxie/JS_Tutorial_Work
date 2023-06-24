@@ -968,12 +968,59 @@ myPromise.then(value => {
 }) */
 
 
-const users = fetch("https://jsonplaceholder.typicode.com/users");
+//const users = fetch("https://jsonplaceholder.typicode.com/users");
 
 // pending state
-console.log(users);
+//console.log(users);
 
-fetch("https://jsonplaceholder.typicode.com/users")
+
+//fetch with promise
+/* fetch("https://jsonplaceholder.typicode.com/users")
   .then(response => {
-    console.log(response);
+    return response.json();
 })
+.then(data => {
+  data.forEach(user =>{
+    console.log(user);
+  })
+}); */
+
+
+
+// Async / Await
+
+    // workflow function
+/* const getAllUserEmails = async () => {
+
+  const response = await fetch ("https://jsonplaceholder.typicode.com/users");
+  const jsonUserData = await response.json();
+  const userEmailArray = jsonUserData.map(user => {
+    return user.email;
+  });
+  postToWebPage(userEmailArray);
+}
+
+const postToWebPage = (data) => {
+  console.log(data);
+}
+
+getAllUserEmails(); */
+
+
+// 2nd parameter of Fetch is an object
+
+const getDadJoke = async () => {
+
+  const response = await fetch ("https://icanhazdadjoke.com/", {
+    method: "GET",
+    headers: {
+      Accept: "application/json"
+    }
+  });
+  const jsonJokeData = await response.json();
+  
+  console.log(jsonJokeData);
+}
+
+getDadJoke();
+
